@@ -1,7 +1,6 @@
 def collect_user_details():
     user_details = {}
 
-    # Collecting user input
     user_details['Name'] = input("Enter your name: ").strip()
 
     while True:
@@ -30,15 +29,11 @@ def collect_user_details():
             break
         else:
             print("Invalid pincode. It should be 5 or 6 digits.")
-
-    # Display collected data
+            
     print("\nCollected User Details:")
     for key, value in user_details.items():
         print(f"{key}: {value}")
 
     return user_details
-
-
-# Call the function to collect details
 if __name__ == "__main__":
     collect_user_details()
